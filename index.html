@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Test Minnovi</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div id="signInForm">
+                <h1>Registrati in un attimo</h1>
+
+                <div class="steps">
+                    <div class="step active" id="step1">1</div>
+                    <p>Dati Personali</p>
+                    <div class="line"></div>
+                    <div class="step" id="step2">2</div>
+                    <p>Occupazione</p>
+                </div>
+
+                <div class="tab active" id="personalData">
+
+                    <p>Compila i campi seguenti<p>
+
+                    <div id="errorAlert">
+                        <p id="errorMessage"></p>
+                    </div>
+
+                    <div id="contactInfo" class="group">
+                        <p>Informazioni personali e di contatto</p>
+                        <div class="fields">
+                            <input type="text" placeholder="Nome" id="firstName" />
+                            <input type="text" placeholder="Cognome" id="lastName" />
+                            <input type="tel" placeholder="Telefono" id="tel" />
+                            <input type="email" placeholder="Email" id="email" />
+                        </div>
+                    </div>
+
+                    <div id="addressInfo" class="group">
+                        <p>Indirizzo</p>
+                        <div class="fields">
+                            <input type="text" placeholder="Via" id="address" />
+                            <input type="number" placeholder="Cap" id="cap" />
+                            <input type="text" placeholder="Provincia" id="province" />
+                            <input type="text" placeholder="Città" id="city" />
+                            <input type="text" placeholder="Nazione" id="nation" />
+                        </div>
+                    </div>
+
+                    <button id="continua">CONTINUA</button>
+                </div>
+
+                <div class="tab" id="jobData">
+                    <p>Qual'è la tua occupazione attuale?</p>
+                    <div id="jobInfo" class="group">
+                        <p>Occupazione</p>
+                        <div class="fields">
+                            <select id="occupation">
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="confirm">CONFERMA</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="section" id="gradient">
+            <div id="welcomeCard">
+                <h3>Benvenuto!</h3>
+
+                <div id="mailIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                </div>
+
+                <p>Registrati e inizia a gestire i tuoi <br> contatti con un click!</p>
+            </div>
+        </div>
+
+        <div class="backdropModal">
+            <div id="modal">
+                <h1 id="message"></h1>
+                <button id="closeModal">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
